@@ -11,13 +11,13 @@ input.addEventListener('keyup',(e)=>{
         onAdd();}
 });
 
-const removeAll=document.querySelector('.removeAll');
+const deleteAll=document.querySelector('.deleteAll');
 const bubble=document.querySelector('.bubble');
 
-removeAll.addEventListener('mouseover',()=>{
+deleteAll.addEventListener('mouseover',()=>{
     bubble.classList.add('visible');
 });
-removeAll.addEventListener('mouseout',()=>{
+deleteAll.addEventListener('mouseout',()=>{
     bubble.classList.remove('visible');
 });
 
@@ -51,9 +51,10 @@ function createItem(text) {
         items.removeChild(itemRow);
         //itemRow.remove();
     });
-    removeAll.addEventListener('click',()=>{
+    deleteAll.addEventListener('click',()=>{
         if(confirm("Are you sure you want to delete all of them?")){
         items.innerHTML='';
+        return;
         }else{
         return;}
     });
@@ -68,7 +69,7 @@ function createItem(text) {
     item.append(itemDelete);   
 
     
-    item.scrollIntoView({block:'center'});
+    item.scrollIntoView({block:'end'});
     return;
 }
     

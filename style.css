@@ -70,7 +70,7 @@ button {
   height: 1px;
   margin: auto;
 }
-.removeAll {
+.deleteAll {
   position: absolute;
   bottom: 60px;
   right: 12px;
@@ -137,6 +137,9 @@ footer {
   }
   .footer__input {
     height: 6vh;
+  }
+  .deleteAll {
+    bottom: 8.3vh;
   }
   .items {
     height: 75vh;
