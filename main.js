@@ -21,7 +21,6 @@ removeAll.addEventListener('mouseout',()=>{
     bubble.classList.remove('visible');
 });
 
-
 function onAdd() {
     const text=input.value;
     if(text===''){
