@@ -4,11 +4,11 @@ merry.github.io
 <p align="center">
 <img src="https://img.shields.io/badge/made by-merry-red">
 <img src="https://img.shields.io/badge/with-dream coding-yello">
-<img src="https://img.shields.io/badge/JS-32.1-yellow">
+<img src="https://img.shields.io/badge/JS-39.8-yellow">
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
 
 </p>
-<img width="100%" src="readme/todolist.png">  
+<img width="100%" src="readme/todolist.PNG">  
 <h2 align="center"><a href="https://merryha.github.io/To-do-list/"><b>Live Demo</b></a></h2>
 
 ---
@@ -59,7 +59,7 @@ merry.github.io
 **Development Environment** : HTML, CSS, Vanilla JS, vscode, github  
 자세한 코드는 [이곳](https://github.com/MerryHa/To-do-list/blob/main/main.js)에서 확인하세요.
 
-## **Local Storage**
+### **Local Storage**
 
 `Storage.getItem()`과 `Storage.setItem()` 메서드를 이용하여 브라우저가 닫히거나 다시 열리더라도 입력해 두었던 리스트 데이터들이 사라지지 않도록 구현했습니다.
 
@@ -83,7 +83,7 @@ function loadItemsFromBrowser() {
 }
 ```
 
-## **CSS**
+### **CSS**
 
 텍스트 색상과 다른 색으로 strike through 되도록 하였습니다.
 
