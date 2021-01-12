@@ -51,7 +51,7 @@ merry.github.io
 
 <img src="readme/scrolling.gif" width=300px>
 
-- 리스트가 담긴 컨테이너의 높이를 넘어설만큼 리스트를 많이 추가하면 스크롤이 가능하도록 하였습니다.
+- 리스트가 담긴 컨테이너의 높이를 넘어설 만큼 리스트를 많이 추가하면 스크롤이 가능하도록 하였습니다.
 - `scrollIntoView({block:'end'})`을 이용해서 자동으로 방금 생성한 리스트가 보여지도록 스크롤링합니다.
 
 # **About the project.**
