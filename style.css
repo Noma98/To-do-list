@@ -82,7 +82,6 @@ button {
 }
 .item__name--outer {
   width: 100%;
-  color: var(--color-red);
   text-align: start;
 }
 .item__name--outer.strikethrough {
