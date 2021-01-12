@@ -23,7 +23,6 @@ body {
   font-family: 'Inconsolata', monospace;
   color: var(--color-dark-gray);
   font-family: 'Roboto', sans-serif;
-  padding-top: 25px;
 }
 ul {
   list-style: none;
@@ -36,7 +35,10 @@ button {
   cursor: pointer;
 }
 .list {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--color-grayish-ivory);
   border-radius: 20px;
   width: 350px;
@@ -71,15 +73,20 @@ button {
   padding: 8px 36px;
 }
 .item__name {
-  text-align: start;
   width: 100%;
   transition: all 200ms ease-in;
+  color: var(--color-dark-gray);
 }
-.item__name:hover {
+.item__name--outer:hover {
   cursor: pointer;
 }
-.item__name.strikethrough {
+.item__name--outer {
+  width: 100%;
   color: var(--color-red);
+  text-align: start;
+}
+.item__name--outer.strikethrough {
+  color: var(--color-purple);
   text-decoration: line-through;
 }
 .item__delete {
@@ -108,11 +115,11 @@ button {
   position: absolute;
   bottom: 100px;
   right: 50px;
-  opacity: 0;
+  visibility: hidden;
   transition: all 150ms ease-in;
 }
 .bubble.visible {
-  opacity: 100;
+  visibility: visible;
 }
 footer {
   background: linear-gradient(

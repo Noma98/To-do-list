@@ -32,7 +32,9 @@ function createItem(text) {
     itemRow.setAttribute('data-id',id);
     itemRow.innerHTML=`
         <div class="item">
-            <span class="item__name">${text}</span>
+        <span class="item__name--outer">
+            <span class="item__name">${text}</span>        
+        </span>
             <button class="item__delete">
                 <i class="fas fa-trash-alt" data-id=${id}></i>
             </button>
@@ -46,18 +48,26 @@ function createItem(text) {
 items.addEventListener('click',event=>{
     const target=event.target;
     const id=target.dataset.id;
-    const targetClassName=target.className;
+    let targetClassName=target.className;
     if(id){
          deleteItemRow(id);
          return;
     }
     switch (targetClassName) {
-        case 'item__name':
+        case 'item__name--outer':
             target.classList.add('strikethrough');
             break;
-        case 'item__name strikethrough':
+        case 'item__name--outer strikethrough':
             target.classList.remove('strikethrough');
             break;
+        case 'item__name':
+            if(target.parentNode.className==='item__name--outer'){
+                target.parentNode.classList.add('strikethrough');
+                break;
+            }else{
+                target.parentNode.classList.remove('strikethrough');
+                break;
+            }
         default:
             break;
     }
