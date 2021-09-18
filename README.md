@@ -9,7 +9,7 @@ merry.github.io
 
 </p>
 <img width="100%" src="readme/todolist.PNG">  
-<h2 align="center"><a href="https://merryha.github.io/To-do-list/"><b>Live Demo</b></a></h2>
+<h2 align="center"><a href="https://noma98.github.io/To-do-list/"><b>Live Demo</b></a></h2>
 
 ---
 
